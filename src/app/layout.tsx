@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={`${inter.className} flex`}>
         <Sidebar />
         <MenuButton />
-        <div className="mx-auto">{children}</div>
+        <main className="w-full flex justify-center">{children}</main>
       </body>
     </html>
   );

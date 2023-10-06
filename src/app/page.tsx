@@ -8,7 +8,7 @@ export default function Home() {
         <span className="text-white">Front End Developer</span> and{' '}
         <span className="text-white">Sailor</span>.
       </h1>
-      <h2 className="text-lg sm:text-xl md:mt-60 max-w-sm drop-shadow-2xl">
+      <h2 className="text-lg sm:text-xl md:mt-60 max-w-sm drop-shadow-2xl text-gray-300">
         Take a look around. <br />
         This is a space for me to show some of my projects, and tell you a
         little about myself.
