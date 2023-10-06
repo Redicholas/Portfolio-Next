@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Sidebar = () => {
   return (
-    <div className="h-screen p-6 hidden md:flex flex-col justify-between w-1/4 border-r border-slate-800">
+    <nav className="h-screen p-6 hidden md:flex flex-col justify-between w-1/4 border-r border-slate-800">
       <div>
         <Image
           src="logo.svg"
@@ -28,7 +28,7 @@ const Sidebar = () => {
           <Image src="linkedin.svg" alt="LinkedIn" height={40} width={40} />
         </Link>
       </div>
-    </div>
+    </nav>
   );
 };
 
