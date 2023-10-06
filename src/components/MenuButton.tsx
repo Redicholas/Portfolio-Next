@@ -13,13 +13,13 @@ const MenuButton = () => {
 
   return (
     <>
-      <button onClick={() => setIsOpen(!isOpen)}>
+      <button onClick={toggle} className="md:hidden">
         <Image
           src="/hamburger.svg"
           alt="Menu"
           height={40}
           width={40}
-          className="absolute top-6 right-6 z-10"
+          className="absolute top-6 right-6 z-30"
         />
       </button>
       {isOpen && <MobileMenu toggle={toggle} />}

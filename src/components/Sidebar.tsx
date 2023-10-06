@@ -4,14 +4,15 @@ import Link from 'next/link';
 
 const Sidebar = () => {
   return (
-    <nav className="h-screen p-6 hidden md:flex flex-col justify-between w-1/4 border-r border-slate-800">
+    <nav className="h-screen p-6 hidden md:flex flex-col justify-between w-1/4 max-w-sm border-r border-slate-800">
       <div>
         <Image
           src="logo.svg"
           alt="Logo"
-          height={75}
-          width={75}
+          height={100}
+          width={100}
           className="mx-auto"
+          priority={true}
         />
         <div className="flex flex-col justify-center items-center mt-20 mb-20 gap-20">
           <Link href="/">Home</Link>

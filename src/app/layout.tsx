@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={`${inter.className} flex`}>
         <Sidebar />
         <MenuButton />
-        {children}
+        <div className="mx-auto">{children}</div>
       </body>
     </html>
   );

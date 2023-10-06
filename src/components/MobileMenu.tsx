@@ -8,7 +8,7 @@ interface IMobileMenuProps {
 
 const MobileMenu = ({ toggle }: IMobileMenuProps) => {
   return (
-    <nav className="absolute h-screen w-screen flex flex-col justify-between p-20 items-center  bg-background">
+    <nav className="absolute h-screen w-screen flex flex-col justify-between p-20 items-center bg-background z-20">
       <Image src="logo.svg" alt="Logo" height={75} width={75} />
       <Link href="/" onClick={toggle}>
         Home
