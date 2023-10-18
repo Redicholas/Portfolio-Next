@@ -1,7 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
-import Image from 'next/image';
+import { useState } from 'react';
 import MobileMenu from './MobileMenu';
 
 const MenuButton = () => {
@@ -14,13 +13,11 @@ const MenuButton = () => {
   return (
     <>
       <button onClick={toggle} className="md:hidden">
-        <Image
-          src="/hamburger.svg"
-          alt="Menu"
-          height={40}
-          width={40}
-          className="absolute top-6 right-6 z-30"
-        />
+        <i
+          className={`fa-solid absolute top-6 right-6 z-30 text-5xl transition ${
+            isOpen ? 'fa-xmark' : 'fa-bars'
+          }`}
+        ></i>
       </button>
       {isOpen && <MobileMenu toggle={toggle} />}
     </>

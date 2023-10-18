@@ -40,12 +40,16 @@ const PortfolioItem = ({
       </ul>
 
       <div className="flex justify-between items-center">
-        <Link
-          href={url}
-          className="text-blue-500 hover:underline hover:text-blue-600 transition-colors duration-300"
-        >
-          View Live
-        </Link>
+        {url == '' ? (
+          <Link
+            href={url}
+            className="text-blue-500 hover:underline hover:text-blue-600 transition-colors duration-300"
+          >
+            View Live
+          </Link>
+        ) : (
+          <></>
+        )}
         <Link
           href={repoUrl}
           className="text-blue-500 hover:underline hover:text-blue-600 transition-colors duration-300"

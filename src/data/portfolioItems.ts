@@ -1,4 +1,4 @@
-import { IPortfolioItem } from '@/components/portfolioItem';
+import { IPortfolioItem } from '@/components/PortfolioItem';
 
 export const portfolioItems: IPortfolioItem[] = [
   {
@@ -16,7 +16,7 @@ export const portfolioItems: IPortfolioItem[] = [
     ],
     image: '/MyNote.png',
     altText: 'MyNote Website',
-    url: 'https://github.com/Redicholas/JobTech-AF-Case',
+    url: '',
     repoUrl: 'https://github.com/Redicholas/MyNote',
   },
   {

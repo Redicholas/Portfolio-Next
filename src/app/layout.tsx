@@ -24,7 +24,7 @@ export default function RootLayout({
       <Script src="https://kit.fontawesome.com/2d79386da4.js"></Script>
       <body className={`${inter.className} flex`}>
         <Sidebar />
-        <Link href="/" className="md:hidden">
+        <Link href="/" className="md:hidden z-30">
           <Image
             src="/logo.svg"
             alt="Logo"
@@ -34,7 +34,7 @@ export default function RootLayout({
           />
         </Link>
         <MenuButton />
-        <main className="w-full flex justify-center items-center p-6 md:ml-48 mt-32 md:mt-12">
+        <main className="w-full min-h-screen flex justify-center items-center p-6 md:ml-48">
           {children}
         </main>
       </body>

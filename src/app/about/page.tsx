@@ -2,7 +2,7 @@ import React from 'react';
 
 const Page = () => {
   return (
-    <div className="flex flex-col justify-center items-center max-w-xl md:mt-0">
+    <div className="flex flex-col justify-center items-center max-w-xl mt-24 md:mt-0">
       <section>
         <h1 className="text-2xl sm:text-4xl mb-12">A little about me.</h1>
         <p>

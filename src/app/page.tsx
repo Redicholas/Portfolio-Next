@@ -10,11 +10,11 @@ export default function Home() {
         </span>
         Front End Developer <span className="opacity-70">and</span> Sailor.
       </h1>
-      <h2 className="text-lg sm:text-xl md:mt-60 max-w-sm drop-shadow-2xl ">
+      <p className="text-lg sm:text-xl md:mt-32 max-w-sm drop-shadow-2xl ">
         Take a look around. <br />
         This is a space for me to show some of my projects, and tell you a
         little about myself.
-      </h2>
+      </p>
 
       <Image
         src="/nicholas-peters.png"

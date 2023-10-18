@@ -32,10 +32,13 @@ const Sidebar = () => {
         </div>
       </div>
       <div className="flex gap-4 justify-center ">
-        <Link href="https://github.com/Redicholas">
+        <Link href="https://github.com/Redicholas" aria-label="GitHub Link">
           <i className="fa-brands fa-github text-4xl hover:text-slate-400"></i>
         </Link>
-        <Link href="https://www.linkedin.com/in/nicholas-peters-dev">
+        <Link
+          href="https://www.linkedin.com/in/nicholas-peters-dev"
+          aria-label="LinkedIn Link"
+        >
           <i className="fa-brands fa-linkedin text-4xl hover:text-slate-400"></i>
         </Link>
       </div>

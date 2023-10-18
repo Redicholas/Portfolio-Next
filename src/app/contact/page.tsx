@@ -1,7 +1,8 @@
+import Email from '@/components/Email';
 import Link from 'next/link';
 import React from 'react';
 
-const Page = () => {
+const Contact = () => {
   return (
     <div className="flex flex-col justify-center items-center">
       <h1 className="text-4xl">Contact</h1>
@@ -19,9 +20,9 @@ const Page = () => {
           <i className="fa-solid fa-location-dot p-4 text-6xl hover:text-slate-400"></i>
         </Link>
       </div>
-      <p className="text-center text-2xl">peters.nicholas@gmail.com</p>
+      <Email />
     </div>
   );
 };
 
-export default Page;
+export default Contact;
