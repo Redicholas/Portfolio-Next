@@ -32,7 +32,7 @@ export default function RootLayout({
           />
         </Link>
         <MenuButton />
-        <main className="w-full flex justify-center items-center p-6 md:ml-48">
+        <main className="w-full flex justify-center items-center p-6 md:ml-48 mt-32 md:mt-0">
           {children}
         </main>
       </body>

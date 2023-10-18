@@ -4,21 +4,31 @@ import Link from 'next/link';
 
 const Sidebar = () => {
   return (
-    <nav className="h-screen p-6 hidden md:flex flex-col justify-between w-1/4 max-w-sm border-r border-slate-800">
+    <nav className="fixed h-screen p-6 hidden md:flex flex-col justify-between w-48 border-r border-slate-800">
       <div>
-        <Image
-          src="logo.svg"
-          alt="Logo"
-          height={100}
-          width={100}
-          className="mx-auto"
-          priority={true}
-        />
+        <Link href="/">
+          <Image
+            src="logo.svg"
+            alt="Logo"
+            height={100}
+            width={100}
+            className="mx-auto"
+            priority={true}
+          />
+        </Link>
         <div className="flex flex-col justify-center items-center mt-20 mb-20 gap-20">
-          <Link href="/">Home</Link>
-          <Link href="/about">About</Link>
-          <Link href="/projects">Projects</Link>
-          <Link href="/contact">Contact</Link>
+          <Link href="/" className="hover:text-accent">
+            Home
+          </Link>
+          <Link href="/about" className="hover:text-accent">
+            About
+          </Link>
+          <Link href="/projects" className="hover:text-accent">
+            Projects
+          </Link>
+          <Link href="/contact" className="hover:text-accent">
+            Contact
+          </Link>
         </div>
       </div>
       <div className="flex gap-4 justify-center ">
