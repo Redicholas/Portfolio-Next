@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google';
 import MenuButton from '@/components/MenuButton';
 import Image from 'next/image';
 import Link from 'next/link';
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
+      <Script src="https://kit.fontawesome.com/2d79386da4.js"></Script>
       <body className={`${inter.className} flex`}>
         <Sidebar />
         <Link href="/" className="md:hidden">
@@ -32,7 +34,7 @@ export default function RootLayout({
           />
         </Link>
         <MenuButton />
-        <main className="w-full flex justify-center items-center p-6 md:ml-48 mt-32 md:mt-0">
+        <main className="w-full flex justify-center items-center p-6 md:ml-48 mt-32 md:mt-12">
           {children}
         </main>
       </body>

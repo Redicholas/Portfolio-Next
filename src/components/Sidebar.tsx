@@ -17,26 +17,26 @@ const Sidebar = () => {
           />
         </Link>
         <div className="flex flex-col justify-center items-center mt-20 mb-20 gap-20">
-          <Link href="/" className="hover:text-accent">
+          <Link href="/" className="hover:text-slate-400">
             Home
           </Link>
-          <Link href="/about" className="hover:text-accent">
+          <Link href="/about" className="hover:text-slate-400">
             About
           </Link>
-          <Link href="/projects" className="hover:text-accent">
+          <Link href="/projects" className="hover:text-slate-400">
             Projects
           </Link>
-          <Link href="/contact" className="hover:text-accent">
+          <Link href="/contact" className="hover:text-slate-400">
             Contact
           </Link>
         </div>
       </div>
       <div className="flex gap-4 justify-center ">
         <Link href="https://github.com/Redicholas">
-          <Image src="github.svg" alt="Github" height={40} width={40} />
+          <i className="fa-brands fa-github text-4xl hover:text-slate-400"></i>
         </Link>
-        <Link href="https://www.linkedin.com/in/nicholas-peters-dev/">
-          <Image src="linkedin.svg" alt="LinkedIn" height={40} width={40} />
+        <Link href="https://www.linkedin.com/in/nicholas-peters-dev">
+          <i className="fa-brands fa-linkedin text-4xl hover:text-slate-400"></i>
         </Link>
       </div>
     </nav>
